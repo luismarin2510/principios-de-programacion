@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<h1>Programa para calcular la puntuacion </h1>
+<h1>de un partido de futbol</h1>
+
+<script>
+    function saltolinea (){
+        document.write("<br>")
+    
+    }
+    function imprimir(linea){
+        document.write(linea);
+        saltolinea();
+
+    }
+
+    var victorias = Number(prompt("numero de victorias"));
+    var empates  = Number(prompt("numero de empates "));
+
+    imprimir( "el resultado es " + ((victorias*3)+empates))
+
+    var victorias = parseInt(prompt("numero de victorias"));
+    var empates  = parseInt(prompt("numero de empates "));
+
+    imprimir( "el resultado es " + ((victorias*3)+empates))
+
+
+</script>
