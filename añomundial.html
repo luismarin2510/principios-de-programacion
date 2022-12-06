@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h1>Año del mundial</h1>
+
+<script>
+function saltolinea(){
+    document.write("<br>");
+}
+function imprimir (linea){
+    document.write(linea);
+    saltolinea();
+}
+
+var yaermundial = 1930; // primer mundial 
+
+alert("El primer mundial de futbol fue "+yaermundial);
+var limite = parseInt(prompt("Ingrese el año limite del mundial "));
+
+if(limite >= yaermundial ){
+    while (yaermundial <= limite) { // limite de año actual 
+        var mundial = yaermundial=yaermundial+4;
+        imprimir(mundial-4);
+    }
+}else{
+    alert("el primer mundial fue en 1930 tu digitaste "+ limite);
+}
+
+
+</script>
