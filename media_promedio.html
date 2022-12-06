@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h1>Clacular la media de edades de la una familia </h1>
+
+<script>
+function saltolinea(){
+    document.write("<br>");
+}
+function imprimir (linea){
+    document.write(linea);
+    saltolinea();
+}
+
+var nfamilia = parseFloat(prompt("Cuantos son el tu familia"));
+var edad=0;
+var total=0;
+var persona =1;
+
+while (persona <= nfamilia) {
+
+    var edad = parseInt(prompt("Ingrese la edad de la persona " + persona));
+    imprimir("La edad numero "+ persona+" es "+ edad +" años ");
+    total = total+edad;
+     persona ++;
+}
+
+imprimir("El total de años es "+ total +" años")
+imprimir("La media es "+(total/nfamilia))
+
+
+</script>
