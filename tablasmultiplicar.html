@@ -11,10 +11,11 @@ function imprimir (linea){
     saltolinea();
 }
 var tabla = parseInt(prompt("Ingrese la tabla de multiplicar que quieres ver"));
+var max = parseInt(prompt("Dime el Maximo que quieres multiplicar ","10"))
 
 if( tabla >=1 ){ // defino la primera tabla minima 
     
-    for (var contador = 1; contador <= 10; contador++) { // loop el uso de for 
+    for (var contador = 1; contador <= max ; contador++) { // loop el uso de for 
         imprimir(tabla+" x "+ contador + " = "+ (tabla*contador));
     }
 
