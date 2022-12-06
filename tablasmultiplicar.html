@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<h1>Tabla de multiplicar</h1>
+
+<script>
+function saltolinea(){
+    document.write("<br>");
+}
+function imprimir (linea){
+    document.write(linea);
+    saltolinea();
+}
+var tabla = parseInt(prompt("Ingrese la tabla de multiplicar que quieres ver"));
+
+if( tabla >=1 ){ // defino la primera tabla minima 
+    var contador = 1;
+
+    while(contador<=10){ // la tabla llega hasta 10
+        
+        imprimir(tabla+" x "+contador+" = "+(tabla*contador));
+        contador ++;
+    }
+        
+    
+}
+
+
+</script>
