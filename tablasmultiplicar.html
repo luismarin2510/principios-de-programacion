@@ -13,15 +13,11 @@ function imprimir (linea){
 var tabla = parseInt(prompt("Ingrese la tabla de multiplicar que quieres ver"));
 
 if( tabla >=1 ){ // defino la primera tabla minima 
-    var contador = 1;
-
-    while(contador<=10){ // la tabla llega hasta 10
-        
-        imprimir(tabla+" x "+contador+" = "+(tabla*contador));
-        contador ++;
-    }
-        
     
+    for (var contador = 1; contador <= 10; contador++) { // loop el uso de for 
+        imprimir(tabla+" x "+ contador + " = "+ (tabla*contador));
+    }
+
 }
 
 
